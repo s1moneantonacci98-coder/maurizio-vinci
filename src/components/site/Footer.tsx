@@ -67,11 +67,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 sm:flex-row">
-          <p className="text-xs text-slate-400">
-            © {new Date().getFullYear()} Studio Maurizio Vinci. Tutti i
-            diritti riservati.
-          </p>
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-slate-200 pt-6 sm:flex-row">
+          <div className="flex flex-col items-center gap-1 text-center sm:items-start sm:text-left">
+            <p className="text-xs text-slate-400">
+              © {new Date().getFullYear()} Studio Maurizio Vinci. Tutti i
+              diritti riservati.
+            </p>
+            <p className="text-xs text-slate-400 transition-colors hover:text-slate-600">
+              Designed &amp; Developed by Simone Antonacci
+            </p>
+          </div>
           <Link
             href="/privacy-policy"
             className="text-xs font-medium text-slate-500 hover:text-slate-900"
